@@ -1,18 +1,16 @@
 .navigation {
   display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
-  padding: 2rem 2rem;
-  max-height: 100vh;
-  overflow-y: auto;
-  width: 100%;
-  align-items: center;
+  flex-direction: row;
+  justify-content: space-around;
+  list-style: none;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 .navButton {
   transition: all 0.5s ease;
   -webkit-text-stroke: 3px var(--color-primary);
-  font-size: clamp(2.5rem, 6vw, 5rem);
+  font-size: clamp(2rem, 4vw, 3rem);
   text-align: center;
   color: transparent;
   font-family: "Chillink";
@@ -23,12 +21,12 @@
 }
 
 .navButton:hover {
-  font-variation-settings: "wght" 700, "ital" 0;
-  font-weight: 900;
+  font-variation-settings: "wght" 400, "ital" 0;
+  font-weight: 700;
   text-shadow: none;
   -webkit-text-stroke: 2px var(--color-primary);
-  transform: scale(1.05);
-  font-size: clamp(2.8rem, 6.5vw, 5.5rem);
+  transform: scale(1.02);
+  font-size: clamp(2.5rem, 4vw, 4rem);
 }
 
 .navigation::-webkit-scrollbar {
@@ -52,4 +50,92 @@
 
 .navigation::-webkit-scrollbar-thumb:hover {
   background: rgba(255, 255, 255, 0.5);
+}
+
+@media (max-width: 768px) {
+  .container {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .left-section {
+    width: 40%;
+    padding: 30px 20px;
+  }
+
+  .right-section {
+    width: 60%;
+  }
+
+  .brand-title {
+    font-size: 2.5rem;
+  }
+
+  .navigation {
+    gap: 1rem;
+    padding: 1.5rem 1rem;
+  }
+
+  .nav-button {
+    font-size: clamp(1.5rem, 4vw, 2.8rem);
+    min-width: 200px;
+    max-width: 400px;
+    padding: 0.8rem 1.2rem;
+  }
+
+  .nav-button:hover {
+    font-size: clamp(1.7rem, 4.5vw, 3.2rem);
+    transform: scale(1.03);
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .left-section {
+    width: 35%;
+    padding: 20px 15px;
+  }
+
+  .right-section {
+    width: 65%;
+  }
+
+  .brand-title {
+    font-size: 1.8rem;
+    line-height: 0.9;
+  }
+
+  .navigation {
+    gap: 0.8rem;
+    padding: 1rem 0.5rem;
+  }
+
+  .nav-button {
+    font-size: clamp(1rem, 3.5vw, 2rem);
+    min-width: 150px;
+    max-width: 280px;
+    padding: 0.6rem 1rem;
+    -webkit-text-stroke: 2px #d6f4f4;
+    text-shadow: 5px 5px 0px #07bccc, 8px 8px 0px #e601c0, 12px 12px 0px #e9019a,
+      15px 15px 0px #f40468, 25px 25px 5px #482896;
+  }
+
+  .nav-button:hover {
+    font-size: clamp(1.2rem, 4vw, 2.3rem);
+    transform: scale(1.02);
+    -webkit-text-stroke: 2px #ffffff;
+  }
+
+  .left-section::before {
+    animation: float 15s ease-in-out infinite;
+  }
+
+  .brand-title::after {
+    width: 60px;
+    height: 3px;
+  }
 }

@@ -44,9 +44,9 @@ export default function Navigation() {
   }, [pathname]);
 
   return (
-    <ul>
+    <ul className={styles.navigation}>
       {sections.map(({ id, label }) => (
-        <li key={id} className={styles.navigation}>
+        <li key={id} className={styles.navList}>
           <Link href={`/#${id}`} className={styles.navButton}>
             {label}
           </Link>
