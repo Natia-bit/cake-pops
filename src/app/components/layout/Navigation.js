@@ -8,7 +8,7 @@ import styles from "./Navigation.module.css";
 
 const sections = [
   { id: "Home", label: "Home" },
-  { id: "about-me", label: "About Me" },
+  { id: "about-me", label: "About me" },
   { id: "products", label: "Products" },
   { id: "location", label: "Location" },
   { id: "contact", label: "Contact" },

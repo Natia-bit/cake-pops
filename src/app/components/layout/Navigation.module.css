@@ -3,8 +3,9 @@
   flex-direction: row;
   justify-content: space-around;
   list-style: none;
-  padding-top: 1rem;
+  padding-top: 1.5rem;
   padding-bottom: 1rem;
+  /* background-color: var(--color-secondery); */
 }
 
 .navButton {
@@ -14,8 +15,10 @@
   text-align: center;
   color: transparent;
   font-family: "Chillink";
-  text-shadow: 5px 5px 0px #f2a8a2, 8px 8px 0px #e98c89, 10px 10px 0px #e77b7f,
-    15px 15px 0px #466996, 20px 20px 15px #365071;
+  /* text-shadow: 5px 5px 0px #f2a8a2, 8px 8px 0px #e98c89, 10px 10px 0px #e77b7f,
+    15px 15px 0px #466996, 20px 20px 15px #365071; */
+  text-shadow: 3px 3px 0px #f2a8a2, 5px 5px 0px #e98c89, 8px 8px 0px #e77b7f,
+    11px 11px 0px #466996;
   cursor: pointer;
   white-space: nowrap;
 }
