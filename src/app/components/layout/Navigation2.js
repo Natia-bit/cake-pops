@@ -4,11 +4,11 @@ import { useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
 
-import styles from "./Navigation.module.css";
+import styles from "./Navigation2.module.css";
 import CakePopLogo from "../common/CakePopLogo";
 
 const sections = [
-  { id: "Home", label: "Home" },
+  { id: "Home", label: <CakePopLogo textColor="white"></CakePopLogo> },
   { id: "about-me", label: "About me" },
   { id: "products", label: "Products" },
   { id: "location", label: "Location" },
@@ -46,10 +46,14 @@ export default function Navigation() {
 
   return (
     <ul className={styles.navigation}>
-      <CakePopLogo width={70} height={70}></CakePopLogo>
       {sections.map(({ id, label }) => (
         <li key={id} className={styles.navList}>
-          <Link href={`/#${id}`} className={styles.navButton}>
+          <Link
+            href={`/#${id}`}
+            className={`${styles.navButton} ${
+              activeSection === id ? styles.active : ""
+            }`}
+          >
             {label}
           </Link>
         </li>
