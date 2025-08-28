@@ -1,0 +1,35 @@
+.socialCard {
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+.socialCard:hover {
+  transform: scale(1.1);
+}
+
+.iconWrapper {
+  position: relative;
+  display: inline-block;
+  width: fit-content;
+  height: fit-content;
+}
+
+.staticIcon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: opacity 0.3s ease;
+}
+
+.animatedIcon {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.iconWrapper:hover .staticIcon {
+  opacity: 0;
+}
+
+.iconWrapper:hover .animatedIcon {
+  opacity: 1;
+}

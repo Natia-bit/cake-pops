@@ -1,0 +1,10 @@
+.footerContainer {
+  background-color: var(--color-secondary);
+  display: flex;
+  flex-direction: column;
+}
+
+.socialMedia {
+  display: flex;
+  justify-content: center;
+}
