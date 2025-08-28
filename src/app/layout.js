@@ -1,9 +1,17 @@
-import { Montserrat } from "next/font/google";
+import { Montserrat, Comfortaa } from "next/font/google";
 import localFont from "next/font/local";
 import "./globals.css";
+import Navigation from "./components/layout/Navigation";
 
 const montserrat = Montserrat({
   variable: "--font-montserrat",
+  subsets: ["latin"],
+  weight: ["400", "700"],
+  display: "swap",
+});
+
+const comfortaa = Comfortaa({
+  variable: "--font-comfortaa",
   subsets: ["latin"],
   weight: ["400", "700"],
   display: "swap",
@@ -23,7 +31,10 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        <Navigation />
+        {children}
+      </body>
     </html>
   );
 }
