@@ -8,7 +8,17 @@ import styles from "./Navigation.module.css";
 import CakePopLogo from "../common/CakePopLogo";
 
 const sections = [
-  { id: "Home", label: "Home" },
+  {
+    id: "",
+    label: (
+      <CakePopLogo
+        width={80}
+        height={80}
+        textColor="#365071"
+        backgroundColor="#e56b6f"
+      />
+    ),
+  },
   { id: "about-me", label: "About me" },
   { id: "products", label: "Products" },
   { id: "location", label: "Location" },
@@ -46,12 +56,14 @@ export default function Navigation() {
 
   return (
     <ul className={styles.navigation}>
-      <CakePopLogo width={70} height={70}></CakePopLogo>
       {sections.map(({ id, label }) => (
-        <li key={id} className={styles.navList}>
-          <Link href={`/#${id}`} className={styles.navButton}>
-            {label}
-          </Link>
+        <li
+          key={id}
+          className={` ${styles.navButton} ${
+            styles.activeSection === id ? styles.active : styles.inactive
+          } ${id === "" ? styles.logoNavButton : ""}`}
+        >
+          <Link href={`/#${id}`}>{label}</Link>
         </li>
       ))}
     </ul>

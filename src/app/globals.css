@@ -1,6 +1,6 @@
 :root {
   --color-primary: #365071;
-  --color-secondery: #e56b6f;
+  --color-secondary: #e56b6f;
 }
 
 html,
@@ -9,7 +9,16 @@ body {
   overflow-x: hidden;
   font-family: "Montserrat";
   color: var(--color-primary);
+  height: 100%;
+  margin: 0;
+  padding: 0;
 }
+
+/* body {
+  background-image: url("/background/cake-dark.svg");
+  background-size: cover;
+  min-height: 100vh;
+} */
 
 h1,
 h2 {
