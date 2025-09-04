@@ -27,7 +27,7 @@
 
 .navButton:hover {
   font-size: 1.3em;
-  color: white;
+  color: var(--color-accent-light);
 }
 
 .logoNavButton svg g {

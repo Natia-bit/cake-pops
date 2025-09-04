@@ -64,7 +64,7 @@ export default function Navigation() {
             styles.activeSection === id ? styles.active : styles.inactive
           } ${id === "" ? styles.logoNavButton : ""}`}
         >
-          <Link href={`/${id}`}>{label}</Link>
+          <Link href={`/#${id}`}>{label}</Link>
         </li>
       ))}
     </ul>
