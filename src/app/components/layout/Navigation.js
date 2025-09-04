@@ -19,15 +19,36 @@ const sections = [
       />
     ),
   },
-  { id: "home", label: "Home" },
-  { id: "about-me", label: "About me" },
-  { id: "products", label: "Products" },
-  { id: "location", label: "Location" },
-  { id: "contact", label: "Contact" },
+  {
+    id: "home",
+    label: "Home",
+    icon: <span className="material-symbols-outlined">home</span>,
+  },
+  {
+    id: "about-me",
+    label: "About me",
+    icon: <span className="material-symbols-outlined">person</span>,
+  },
+  {
+    id: "products",
+    label: "Products",
+    icon: <span className="material-symbols-outlined">shopping_bag</span>,
+  },
+  {
+    id: "location",
+    label: "Location",
+    icon: <span className="material-symbols-outlined">location_on</span>,
+  },
+  {
+    id: "contact",
+    label: "Contact",
+    icon: <span className="material-symbols-outlined">call</span>,
+  },
 ];
 
 export default function Navigation() {
   const [activeSection, setActiveSection] = useState("");
+  const [menuOpen, setMenuOpen] = useState(false);
   const pathname = usePathname();
 
   useEffect(() => {
@@ -56,17 +77,50 @@ export default function Navigation() {
   }, [pathname]);
 
   return (
-    <ul className={styles.navigation}>
-      {sections.map(({ id, label }) => (
-        <li
-          key={id}
-          className={` ${styles.navButton} ${
-            styles.activeSection === id ? styles.active : styles.inactive
-          } ${id === "" ? styles.logoNavButton : ""}`}
+    <>
+      <div className={styles.topNav}>
+        <button
+          className={styles.logoButton}
+          onClick={() => setMenuOpen((prev) => !prev)}
         >
-          <Link href={`/#${id}`}>{label}</Link>
-        </li>
-      ))}
-    </ul>
+          <CakePopLogo
+            width={60}
+            height={60}
+            textColor="#365071"
+            backgroundColor="#e56b6f"
+          />
+        </button>
+      </div>
+      <ul className={styles.navigation}>
+        {sections.map(({ id, label }) => (
+          <li
+            key={id}
+            className={` ${styles.navButton} ${
+              styles.activeSection === id ? styles.active : styles.inactive
+            } ${id === "" ? styles.logoNavButton : ""}`}
+          >
+            <Link href={`/#${id}`}>{label}</Link>
+          </li>
+        ))}
+      </ul>
+
+      {menuOpen && (
+        <div className={styles.dropdownMenu}>
+          {sections.slice(1).map(({ id, label, icon }) => (
+            <Link
+              key={id}
+              href={`/#${id}`}
+              className={`${styles.dropdownItem} ${
+                activeSection === id ? styles.active : ""
+              }`}
+              onClick={() => setMenuOpen(false)}
+            >
+              {icon}
+              <span>{label}</span>
+            </Link>
+          ))}
+        </div>
+      )}
+    </>
   );
 }
