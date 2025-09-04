@@ -12,7 +12,7 @@ export default function Footer() {
         <SocialMediaCard
           staticIcon="/social-media/whatsapp.png"
           animatedIcon="/social-media/whatsapp-color.png"
-          link="https://wa.me/+27737953918?text=Hi%20there,%20I'm%20interested%20in%20your%20services."
+          link="https://wa.me/+27823137261?text=Hi%20there,%20I'm%20interested%20in%20your%20services."
         ></SocialMediaCard>
 
         <SocialMediaCard
@@ -24,7 +24,7 @@ export default function Footer() {
         <SocialMediaCard
           staticIcon="/social-media/gmail.png"
           animatedIcon="/social-media/gmail-color.png"
-          link="mailto:natia.natisvili@gmail.com"
+          link="mailto:leanneamyokelly@gmail.com"
         ></SocialMediaCard>
       </div>
       <div className={styles.citing}>
