@@ -19,6 +19,7 @@ const sections = [
       />
     ),
   },
+  { id: "home", label: "Home" },
   { id: "about-me", label: "About me" },
   { id: "products", label: "Products" },
   { id: "location", label: "Location" },

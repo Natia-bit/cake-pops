@@ -2,6 +2,7 @@ import { Montserrat, Comfortaa } from "next/font/google";
 import localFont from "next/font/local";
 import "./globals.css";
 import Navigation from "./components/layout/Navigation";
+import Footer from "./components/layout/Footer";
 
 const montserrat = Montserrat({
   variable: "--font-montserrat",
@@ -34,6 +35,7 @@ export default function RootLayout({ children }) {
       <body>
         <Navigation />
         {children}
+        <Footer />
       </body>
     </html>
   );

@@ -1,0 +1,38 @@
+.footerContainer {
+  background-color: var(--color-secondary);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.socialMedia {
+  display: flex;
+  gap: 2em;
+  /* justify-content: space-around; */
+}
+
+.heading {
+  color: var(--color-dark);
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.citing {
+  color: var(--color-dark);
+  font-size: 0.5rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.citing a {
+  padding-left: 0.2rem;
+}
+
+.citing a {
+  color: var(--color-dark);
+  transition: transform 1s ease;
+}
+.citing a:hover {
+  color: var(--color-accent-light);
+}
