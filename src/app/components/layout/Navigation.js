@@ -19,6 +19,7 @@ const sections = [
       />
     ),
   },
+  { id: "home", label: "Home" },
   { id: "about-me", label: "About me" },
   { id: "products", label: "Products" },
   { id: "location", label: "Location" },
@@ -63,7 +64,7 @@ export default function Navigation() {
             styles.activeSection === id ? styles.active : styles.inactive
           } ${id === "" ? styles.logoNavButton : ""}`}
         >
-          <Link href={`/#${id}`}>{label}</Link>
+          <Link href={`/${id}`}>{label}</Link>
         </li>
       ))}
     </ul>

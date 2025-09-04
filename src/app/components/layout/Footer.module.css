@@ -2,9 +2,36 @@
   background-color: var(--color-secondary);
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .socialMedia {
   display: flex;
-  justify-content: center;
+  gap: 2em;
+  /* justify-content: space-around; */
+}
+
+.heading {
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.citing {
+  color: black;
+  font-size: 0.5rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.citing a {
+  padding-left: 0.2rem;
+}
+
+.citing a {
+  color: black;
+  transition: transform 1s ease;
+}
+.citing a:hover {
+  color: white;
 }
