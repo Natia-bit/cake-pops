@@ -33,3 +33,74 @@
 .logoNavButton svg g {
   filter: drop-shadow(0px 0px 3px var(--color-primary));
 }
+
+.topNav {
+  display: none;
+}
+
+.dropdownMenu {
+  display: none;
+}
+
+/* Show only logo on top for mobile */
+@media (max-width: 768px) {
+  .navigation {
+    display: none;
+  }
+
+  .topNav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--color-secondary);
+    padding: 0.5em;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1001;
+  }
+
+  .logoButton {
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+
+  /* Dropdown menu */
+  .dropdownMenu {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: var(--color-secondary);
+    padding: 0.5em 0;
+    position: fixed;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    border-top: 1px solid var(--color-primary);
+  }
+
+  .dropdownItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 0.75rem;
+    color: var(--color-primary);
+    text-decoration: none;
+    transition: color 0.2s ease;
+  }
+
+  .dropdownItem:hover {
+    color: var(--color-accent-light);
+  }
+
+  .dropdownItem svg {
+    margin-bottom: 0.2em;
+  }
+
+  .dropdownItem.active {
+    color: var(--color-accent-light);
+    font-weight: bold;
+  }
+}
