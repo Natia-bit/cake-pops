@@ -6,13 +6,14 @@
   justify-content: space-around;
   list-style: none;
   align-items: center;
-  padding-top: 0.5em;
-  padding-bottom: 0.3em;
 
   background-color: var(--color-secondary);
 
   position: fixed;
   top: 0;
+  /* padding-top: 0.5em;
+  padding-bottom: 0.3em; */
+  height: var(--nav-height);
   width: 100%;
   z-index: 1000;
 }

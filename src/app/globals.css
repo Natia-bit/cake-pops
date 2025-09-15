@@ -6,6 +6,8 @@
   --color-accent-light: #e4c1f9;
   --color-dark: black;
   --color-light: white;
+
+  --nav-height: 100px;
 }
 
 html,
@@ -13,7 +15,7 @@ body {
   max-width: 100vw;
   overflow-x: hidden;
   font-family: "Montserrat";
-  color: var(--color-primary);
+  /* color: var(--color-primary); */
   height: 100%;
   margin: 0;
   padding: 0;

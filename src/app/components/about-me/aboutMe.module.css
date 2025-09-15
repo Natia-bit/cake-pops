@@ -1,0 +1,4 @@
+.aboutMeContainer {
+  margin-top: calc(var(--nav-height, 100px) + 30px);
+  margin-left: 60px;
+}
