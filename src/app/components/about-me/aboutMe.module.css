@@ -1,4 +1,7 @@
 .aboutMeContainer {
   margin-top: calc(var(--nav-height, 100px) + 30px);
   margin-left: 60px;
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center; */
 }

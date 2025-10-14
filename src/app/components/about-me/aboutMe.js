@@ -7,28 +7,33 @@ export default function AboutMe() {
   return (
     <div className={styles.aboutMeContainer}>
       <SectionCard title={"About Me"} />
-      <Image
-        src="./cake-pops/cakePop1.svg"
-        alt="Cake Pop"
-        width={65}
-        height={65}
-      />
-      <Image
-        src="./cake-pops/cakePop2.svg"
-        alt="Cake Pop"
-        width={65}
-        height={65}
-      />
-      <Image
-        src="./cake-pops/cakePop3.svg"
-        alt="Cake Pop"
-        width={65}
-        height={65}
-      />
-      <div>
+      <div className={styles.cakeIcons}>
+        <Image
+          src="./cake-pops/cakePop1.svg"
+          alt="Cake Pop"
+          width={50}
+          height={50}
+        />
+        <Image
+          src="./cake-pops/cakePop2.svg"
+          alt="Cake Pop"
+          width={50}
+          height={50}
+        />
+        <Image
+          src="./cake-pops/cakePop3.svg"
+          alt="Cake Pop"
+          width={50}
+          height={50}
+        />
+      </div>
+      <div className={styles.text}>
         <p>Hi I am Leanne,</p>
         <p>
-          God First | Wife to Matt O&apos;Kelly | Mother to Ava and Blair 💗
+          My cake pops are the prettiest little party favours you&apos;ve ever
+          seen! But watch out—they&apos;re also delicious! I make these tiny,
+          perfect delights for all your big events: birthdays, weddings,
+          corporate galas, and everything in between.
         </p>
       </div>
     </div>
