@@ -31,8 +31,8 @@ export default function PriceList({ title, data }) {
             <tr key={item.name}>
               <td>{item.name}</td>
               <td>{item.qt}</td>
-              <td>R {item.standard}</td>
-              <td>R {item.deluxe}</td>
+              <td>R {item.standard}.00</td>
+              <td>R {item.deluxe}.00</td>
             </tr>
           ))}
         </tbody>

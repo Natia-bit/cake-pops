@@ -1,7 +1,22 @@
 .aboutMeContainer {
   margin-top: calc(var(--nav-height, 100px) + 30px);
-  margin-left: 60px;
-  /* display: flex;
+  margin-left: 80px;
+  margin-right: 80px;
+  display: flex;
+  flex-direction: row;
+  gap: 3rem;
+  padding: 1rem;
+}
+
+.information {
+  display: flex;
   flex-direction: column;
-  justify-content: center; */
+  flex-grow: 1;
+  width: 100%;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
