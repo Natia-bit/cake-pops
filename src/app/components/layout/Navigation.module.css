@@ -67,7 +67,6 @@
     cursor: pointer;
   }
 
-  /* Dropdown menu */
   .dropdownMenu {
     display: flex;
     justify-content: space-around;
