@@ -28,9 +28,9 @@ export default function AboutMe() {
       <Image
         src="/./cake-pops/baby-feet.jpeg"
         alt="cake pops"
-        layout="responsive"
         width={600}
         height={500}
+        layout="responsive"
       ></Image>
     </div>
   );
