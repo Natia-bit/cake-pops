@@ -1,4 +1,4 @@
-.aboutMeContainer {
+.container {
   margin-top: calc(var(--nav-height, 100px) + 30px);
   margin-left: 80px;
   margin-right: 80px;
@@ -21,19 +21,8 @@
   align-items: center;
 }
 
-@media (max-width: 768px) {
-  .aboutMeContainer {
-    flex-direction: column;
-    margin-left: 30px;
-    margin-right: 30px;
-    gap: 2rem;
-    padding: 0;
-  }
-
-  .aboutMeContainer > *:last-child {
-    flex-basis: 30%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
+.tables {
+  display: flex;
+  flex-direction: row;
+  padding: 3rem;
 }

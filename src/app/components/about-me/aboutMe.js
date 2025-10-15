@@ -7,7 +7,7 @@ import Image from "next/image";
 export default function AboutMe() {
   return (
     <div className={styles.aboutMeContainer}>
-      <div className={styles.information}>
+      <div className={styles.context}>
         <div className={styles.title}>
           <SectionCard title={"About Me"} />
           <div>
