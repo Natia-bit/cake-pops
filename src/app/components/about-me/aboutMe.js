@@ -16,7 +16,6 @@ export default function AboutMe() {
         </div>
 
         <div className={styles.text}>
-          <p>Hi I am Leanne,</p>
           <p>
             My cake pops are the prettiest little party favours you&apos;ve ever
             seen! But watch out—they&apos;re also delicious! I make these tiny,
@@ -29,6 +28,7 @@ export default function AboutMe() {
       <Image
         src="/./cake-pops/baby-feet.jpeg"
         alt="cake pops"
+        layout="responsive"
         width={600}
         height={500}
       ></Image>
