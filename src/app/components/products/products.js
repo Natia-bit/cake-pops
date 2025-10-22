@@ -1,6 +1,7 @@
 import PriceList from "../common/PriceList";
 import SectionCard from "../common/SectionCard";
 import ThreeCakePops from "../common/ThreeCakePops";
+import PriceCard from "../PriceCard";
 import styles from "./Products.module.css";
 import Image from "next/image";
 
@@ -41,6 +42,10 @@ export default function Products() {
             the colors you want. With the Fancy option you can choose a
             decoravtive desing, based on your event&apos;s theme.
           </p>
+
+          <div>
+            <PriceCard title={"Standard"} data={standardPrice}></PriceCard>
+          </div>
 
           <div className={styles.tables}>
             <PriceList title={"Standard"} data={standardPrice}></PriceList>
