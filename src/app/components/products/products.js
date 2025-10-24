@@ -44,7 +44,18 @@ export default function Products() {
           </p>
 
           <div>
-            <PriceCard title={"Standard"} data={standardPrice}></PriceCard>
+            <PriceCard
+              title={"Standard"}
+              data={standardPrice}
+              imageUrl={"/products/d-l-samuels-RgaIk9gGa8c-unsplash.jpg"}
+              imageAlt={"Standard Banner"}
+            ></PriceCard>
+            <PriceCard
+              title={"Fancy"}
+              data={fancyPrice}
+              imageUrl={"/products/tai-s-captures-Dl09VLx2JqM-unsplash.jpg"}
+              imageAlt={"Fancy Banner"}
+            ></PriceCard>
           </div>
 
           <div className={styles.tables}>

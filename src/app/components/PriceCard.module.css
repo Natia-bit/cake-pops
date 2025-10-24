@@ -10,11 +10,8 @@
 }
 
 .banner {
-  background-image: url("/products/d-l-samuels-RgaIk9gGa8c-unsplash.jpg");
   min-height: 200px;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
+  position: relative;
 }
 
 /* .card .banner svg {
