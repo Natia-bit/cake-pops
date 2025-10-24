@@ -3,7 +3,6 @@ import styles from "./PriceList.module.css";
 export default function PriceList({ title, data }) {
   return (
     <>
-      <h2>{title}</h2>
       <table className={styles.pricingTable}>
         <thead>
           <tr>
