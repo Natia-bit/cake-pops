@@ -6,6 +6,7 @@ import Image from "next/image";
 export default function PriceCard({ title, data, imageUrl, imageAlt }) {
   return (
     <div className={styles.cardContainer}>
+      <h2 className={styles.title}>{title}</h2>
       <div className={styles.banner}>
         <Image
           src={imageUrl}
@@ -14,9 +15,9 @@ export default function PriceCard({ title, data, imageUrl, imageAlt }) {
           objectFit="cover"
         ></Image>
       </div>
-      <h2>{title}</h2>
+      {/* <h2 className={styles.title}>{title}</h2> */}
 
-      <PriceList title={"Standard"} data={data}></PriceList>
+      <PriceList data={data} className={styles.dataTable}></PriceList>
     </div>
   );
 }

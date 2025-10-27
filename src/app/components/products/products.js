@@ -43,7 +43,7 @@ export default function Products() {
             decoravtive desing, based on your event&apos;s theme.
           </p>
 
-          <div>
+          <div className={styles.priceWapper}>
             <PriceCard
               title={"Standard"}
               data={standardPrice}
@@ -56,11 +56,6 @@ export default function Products() {
               imageUrl={"/products/tai-s-captures-Dl09VLx2JqM-unsplash.jpg"}
               imageAlt={"Fancy Banner"}
             ></PriceCard>
-          </div>
-
-          <div className={styles.tables}>
-            <PriceList title={"Standard"} data={standardPrice}></PriceList>
-            <PriceList title={"Fancy"} data={fancyPrice}></PriceList>
           </div>
 
           <p>
