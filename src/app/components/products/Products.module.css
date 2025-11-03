@@ -7,6 +7,19 @@
   padding: 1rem;
 }
 
+.context {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .priceWapper {
   display: flex;
   flex-direction: row;
