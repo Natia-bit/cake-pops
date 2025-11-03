@@ -3,6 +3,7 @@ import SectionCard from "../common/SectionCard";
 import ThreeCakePops from "../common/ThreeCakePops";
 import PriceCard from "../PriceCard";
 import styles from "./Products.module.css";
+import ImageGallery from "../ImageGallery";
 import Image from "next/image";
 
 const standardPrice = [
@@ -20,13 +21,17 @@ const fancyPrice = [
 export default function Products() {
   return (
     <div className={styles.container}>
-      <div>
+      {/* <div>
         <Image
           src="/./cake-pops/flower.jpeg"
           alt="cake pops"
           width={300}
           height={300}
         ></Image>
+      </div> */}
+
+      <div>
+        <ImageGallery></ImageGallery>
       </div>
 
       <div className={styles.context}>
