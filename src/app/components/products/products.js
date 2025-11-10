@@ -3,6 +3,7 @@ import SectionCard from "../common/SectionCard";
 import ThreeCakePops from "../common/ThreeCakePops";
 import PriceCard from "../PriceCard";
 import styles from "./Products.module.css";
+import ImageGallery from "../ImageGallery";
 import Image from "next/image";
 
 const standardPrice = [
@@ -21,12 +22,7 @@ export default function Products() {
   return (
     <div className={styles.container}>
       <div>
-        <Image
-          src="/./cake-pops/flower.jpeg"
-          alt="cake pops"
-          width={300}
-          height={300}
-        ></Image>
+        <ImageGallery></ImageGallery>
       </div>
 
       <div className={styles.context}>

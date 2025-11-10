@@ -1,11 +1,12 @@
 .pricingTable {
-  color: white;
+  color: var(--color-primary);
   margin: 20px;
-  border: solid white 1px;
+  border: solid var(--color-light) 1px;
+  border-collapse: collapse;
 }
 
 .head tr th {
-  border: solid white 1px;
+  border: solid var(--color-light) 1px;
 }
 
 .head tr,
@@ -14,8 +15,8 @@
 }
 
 .body td {
-  color: red;
-  border-bottom: solid white 1px;
+  color: var(--color-primary);
+  border-bottom: solid var(--color-light) 1px;
 }
 
 .nameCell {
@@ -25,10 +26,12 @@
 
 .qtCell {
   text-align: center;
+  min-width: 3em;
 }
 
 .standardCell,
 .deluxeCell {
   text-align: right;
   padding-right: 20px;
+  /* padding-left: 10px; */
 }
