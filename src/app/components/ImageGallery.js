@@ -11,7 +11,7 @@ const images = [
 ];
 
 export default function ImageGallery() {
-  const [activeIndex, setActiveIndex] = useState(0);
+  const [activeIndex, setActiveIndex] = useState(1);
 
   return (
     <div className={styles.galleryContainer}>
@@ -29,31 +29,4 @@ export default function ImageGallery() {
       ))}
     </div>
   );
-}
-
-{
-  /* <Image
-src="/./cake-pops/flower.jpeg"
-alt="picture"
-width={420}
-height={600}
-></Image>
-<Image
-src="/./cake-pops/blue-and-orange-flowers.png"
-alt="picture"
-width={420}
-height={600}
-></Image>
-<Image
-src="/./cake-pops/springtime-one.png"
-alt="picture"
-width={420}
-height={600}
-></Image>
-<Image
-src="/./cake-pops/polka-dot.png"
-alt="picture"
-width={480}
-height={600}
-></Image> */
 }

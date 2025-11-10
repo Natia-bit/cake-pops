@@ -21,15 +21,6 @@ const fancyPrice = [
 export default function Products() {
   return (
     <div className={styles.container}>
-      {/* <div>
-        <Image
-          src="/./cake-pops/flower.jpeg"
-          alt="cake pops"
-          width={300}
-          height={300}
-        ></Image>
-      </div> */}
-
       <div>
         <ImageGallery></ImageGallery>
       </div>

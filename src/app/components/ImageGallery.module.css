@@ -6,9 +6,8 @@
   overflow: hidden;
   width: 100%;
   max-width: 900px;
-
   height: 400px;
-  gap: 10px;
+  gap: 15px;
   flex: 1 1 50%;
 }
 
@@ -31,7 +30,3 @@
   border-radius: 20px;
   background-size: auto 100%;
 }
-
-/* .option:not(.active) {
-  transform: scale(1);
-} */
