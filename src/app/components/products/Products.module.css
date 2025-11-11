@@ -1,20 +1,12 @@
-.container {
-  margin-left: 80px;
-  margin-right: 80px;
-  display: flex;
-  flex-direction: row;
-  gap: 3rem;
-  padding: 1rem;
-}
-
 .priceWapper {
   display: flex;
   flex-direction: row;
-  /* flex-wrap: wrap; */
   gap: 50px;
   justify-content: space-around;
   margin-top: 5em;
   margin-bottom: 5em;
+
+  flex: 1;
 }
 
 .context {
@@ -24,8 +16,29 @@
   align-items: center;
 }
 
-.title {
+.desktopTitle {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.mobileTitle {
+  display: none;
+  text-align: center;
+  margin-top: 5rem;
+  margin-bottom: -100px;
+}
+
+@media (max-width: 768px) {
+  .priceWapper {
+    flex-direction: column;
+  }
+
+  .desktopTitle {
+    display: none;
+  }
+
+  .mobileTitle {
+    display: block;
+  }
 }

@@ -1,0 +1,25 @@
+.twoColumnSection {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 80px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.reverse {
+  flex-direction: row-reverse;
+}
+
+.left .right {
+  flex: 1;
+}
+
+@media (max-width: 768px) {
+  .twoColumnSection {
+    flex-direction: column;
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+}

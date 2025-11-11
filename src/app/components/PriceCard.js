@@ -15,7 +15,6 @@ export default function PriceCard({ title, data, imageUrl, imageAlt }) {
           objectFit="cover"
         ></Image>
       </div>
-      {/* <h2 className={styles.title}>{title}</h2> */}
 
       <PriceList data={data} className={styles.dataTable}></PriceList>
     </div>
