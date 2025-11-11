@@ -1,13 +1,8 @@
 import Image from "next/image";
 
-export default function ThreeCakePops({ marginTop = 2, marginBottom = 4 }) {
+export default function ThreeCakePops() {
   return (
-    <div
-      style={{
-        marginTop: `${marginTop}rem`,
-        marginBottom: `${marginBottom}rem`,
-      }}
-    >
+    <div>
       <Image
         src="./cake-pops-outlines/cakePop1.svg"
         alt="Cake Pop"

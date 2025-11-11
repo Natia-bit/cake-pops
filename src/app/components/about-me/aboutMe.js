@@ -1,9 +1,8 @@
 import MainTitle from "../common/MainTitle";
-import SectionCard from "../common/SectionCard";
-import ThreeCakePops from "../common/ThreeCakePops";
 import TwoColumnSection from "../common/TwoColumnSection";
-import styles from "./aboutMe.module.css";
 import Image from "next/image";
+
+import styles from "./aboutMe.module.css";
 
 export default function AboutMe() {
   return (
@@ -12,8 +11,7 @@ export default function AboutMe() {
         sectionLeft={
           <div className={styles.context}>
             <div className={styles.title}>
-              <SectionCard title={"About Me"} />
-              <ThreeCakePops />
+              <MainTitle title={"About me"} />
             </div>
 
             <div className={styles.text}>

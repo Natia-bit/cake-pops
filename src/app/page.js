@@ -1,16 +1,16 @@
 import Image from "next/image";
 import styles from "./page.module.css";
-import AboutMe from "./components/about-me/aboutMe";
+import AboutMe from "./components/about-me/aboutMe.js";
 import Products from "./components/products/products";
+import Product from "./components/products/Product";
 
 export default function Home() {
   return (
     <div className={styles.page}>
       <main className={styles.main}>
-        <section id="about-me">
-          <AboutMe></AboutMe>
-        </section>
-        <Products></Products>
+        <AboutMe />
+        <Products />
+        <Product />
       </main>
     </div>
   );
