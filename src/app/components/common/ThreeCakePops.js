@@ -11,20 +11,20 @@ export default function ThreeCakePops({ marginTop = 2, marginBottom = 4 }) {
       <Image
         src="./cake-pops-outlines/cakePop1.svg"
         alt="Cake Pop"
-        width={60}
-        height={60}
+        width={80}
+        height={80}
       />
       <Image
         src="./cake-pops-outlines/cakePop2.svg"
         alt="Cake Pop"
-        width={60}
-        height={60}
+        width={80}
+        height={80}
       />
       <Image
         src="./cake-pops-outlines/cakePop3.svg"
         alt="Cake Pop"
-        width={60}
-        height={60}
+        width={80}
+        height={80}
       />
     </div>
   );

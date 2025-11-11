@@ -1,11 +1,11 @@
-.container {
+/* .container {
   margin-left: 80px;
   margin-right: 80px;
   display: flex;
   flex-direction: row;
   gap: 3rem;
   padding: 1rem;
-}
+} */
 
 .priceWapper {
   display: flex;
@@ -15,6 +15,8 @@
   justify-content: space-around;
   margin-top: 5em;
   margin-bottom: 5em;
+
+  flex: 1;
 }
 
 .context {
@@ -28,4 +30,10 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+@media (max-width: 768px) {
+  .priceWapper {
+    flex-direction: column;
+  }
 }
