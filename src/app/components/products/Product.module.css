@@ -22,11 +22,15 @@
   margin-top: 80px;
 }
 
-.context {
+.contextWrapper {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.btnWrapper {
+  padding: 30px 30px;
 }
 
 @media (max-width: 768px) {

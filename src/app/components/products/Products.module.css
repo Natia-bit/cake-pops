@@ -1,15 +1,14 @@
-.priceWapper {
+.priceWrapper {
   display: flex;
   flex-direction: row;
-  gap: 50px;
-  justify-content: space-around;
+  gap: 100px;
+  justify-content: space-between;
+  align-items: center;
   margin-top: 5em;
   margin-bottom: 5em;
-
-  flex: 1;
 }
 
-.context {
+.contextWrapper {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -29,9 +28,21 @@
   margin-bottom: -100px;
 }
 
+.note {
+  color: grey;
+  padding-top: 2em;
+}
+
+.btnWrapper {
+  padding: 30px 30px;
+}
+
 @media (max-width: 768px) {
-  .priceWapper {
+  .priceWrapper {
     flex-direction: column;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
   }
 
   .desktopTitle {
