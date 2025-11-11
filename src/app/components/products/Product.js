@@ -4,6 +4,7 @@ import SectionCard from "../common/SectionCard";
 import ThreeCakePops from "../common/ThreeCakePops";
 import PriceCard from "../PriceCard";
 import MainTitle from "../common/MainTitle";
+import Button from "../common/Button";
 
 const standardPrice = [
   { name: "Small", qt: 15, standard: 225, deluxe: 300 },
@@ -43,7 +44,7 @@ export default function Product() {
         <div className={styles.text}>
           <p>
             <span>*</span> The Deluxe option includes packaging, featuring
-            individual cake pops that are wrapped and have a sticker
+            individual cake pops that are wrapped and have a sticker.
           </p>
           <p>
             All Vanilla Cake Pops have a chocolate coating, which you can fully
@@ -59,11 +60,13 @@ export default function Product() {
           <p>
             I love custom projects! If you have a specific idea or a design in
             mind, reach out and let&apos;s collaborate to create something
-            unique
+            unique.
           </p>
         </div>
 
-        <button>Dowload price list</button>
+        <div className={styles.btnWrapper}>
+          <Button title={"Download Price List"} />
+        </div>
       </div>
     </div>
   );
