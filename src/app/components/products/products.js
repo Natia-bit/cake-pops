@@ -21,8 +21,19 @@ const fancyPrice = [
 export default function Products() {
   return (
     <div className={styles.container}>
-      <div>
-        <ImageGallery></ImageGallery>
+      <div className={styles.priceWapper}>
+        <PriceCard
+          title={"Standard"}
+          data={standardPrice}
+          imageUrl={"/products/d-l-samuels-RgaIk9gGa8c-unsplash.jpg"}
+          imageAlt={"Standard Banner"}
+        ></PriceCard>
+        <PriceCard
+          title={"Fancy"}
+          data={fancyPrice}
+          imageUrl={"/products/tai-s-captures-Dl09VLx2JqM-unsplash.jpg"}
+          imageAlt={"Fancy Banner"}
+        ></PriceCard>
       </div>
 
       <div className={styles.context}>
@@ -38,21 +49,6 @@ export default function Products() {
             the colors you want. With the Fancy option you can choose a
             decoravtive desing, based on your event&apos;s theme.
           </p>
-
-          <div className={styles.priceWapper}>
-            <PriceCard
-              title={"Standard"}
-              data={standardPrice}
-              imageUrl={"/products/d-l-samuels-RgaIk9gGa8c-unsplash.jpg"}
-              imageAlt={"Standard Banner"}
-            ></PriceCard>
-            <PriceCard
-              title={"Fancy"}
-              data={fancyPrice}
-              imageUrl={"/products/tai-s-captures-Dl09VLx2JqM-unsplash.jpg"}
-              imageAlt={"Fancy Banner"}
-            ></PriceCard>
-          </div>
 
           <p>
             <span>*</span> The Deluxe option includes packaging, featuring
