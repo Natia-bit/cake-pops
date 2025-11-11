@@ -26,14 +26,29 @@
   align-items: center;
 }
 
-.title {
+.desktopTitle {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
+.mobileTitle {
+  display: none;
+  text-align: center;
+  margin-top: 5rem;
+  margin-bottom: -100px;
+}
+
 @media (max-width: 768px) {
   .priceWapper {
     flex-direction: column;
+  }
+
+  .desktopTitle {
+    display: none;
+  }
+
+  .mobileTitle {
+    display: block;
   }
 }

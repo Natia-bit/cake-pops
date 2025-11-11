@@ -22,6 +22,10 @@ const fancyPrice = [
 export default function Products() {
   return (
     <div className={styles.container}>
+      <div className={styles.mobileTitle}>
+        <SectionCard title={"Products"}></SectionCard>
+        <ThreeCakePops></ThreeCakePops>
+      </div>
       <TwoColumnSection
         sectionLeft={
           <div className={styles.priceWapper}>
@@ -41,7 +45,7 @@ export default function Products() {
         }
         sectionRight={
           <div className={styles.contextWrapper}>
-            <div className={styles.title}>
+            <div className={styles.desktopTitle}>
               <SectionCard title={"Products"}></SectionCard>
               <ThreeCakePops></ThreeCakePops>
             </div>

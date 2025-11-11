@@ -19,5 +19,7 @@
 @media (max-width: 768px) {
   .twoColumnSection {
     flex-direction: column;
+    margin-left: 50px;
+    margin-right: 50px;
   }
 }
