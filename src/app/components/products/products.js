@@ -82,7 +82,9 @@ export default function Products() {
             </div>
 
             <div className={styles.btnWrapper}>
-              <Button title={"Dowload Price List"} />
+              <a href="/files/Cakepops-by-Leanne.jpeg" download="Cake Pops">
+                <Button title={"Dowload Price List"} />
+              </a>
             </div>
           </div>
         }
