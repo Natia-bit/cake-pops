@@ -46,3 +46,7 @@ a {
 p {
   line-height: 2;
 }
+
+section {
+  scroll-margin-top: var(--nav-height);
+}
