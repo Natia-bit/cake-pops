@@ -42,5 +42,7 @@
   .priceWapper {
     flex-direction: column;
     gap: 50px;
+    margin-top: 0;
+    margin-bottom: 2rem;
   }
 }

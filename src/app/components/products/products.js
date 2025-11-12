@@ -1,10 +1,6 @@
-import PriceList from "../common/PriceList";
-import SectionCard from "../common/SectionCard";
-import ThreeCakePops from "../common/ThreeCakePops";
 import PriceCard from "../PriceCard";
 import styles from "./Products.module.css";
-import ImageGallery from "../ImageGallery";
-import Image from "next/image";
+
 import TwoColumnSection from "../common/TwoColumnSection";
 import MainTitle from "../common/MainTitle";
 import Button from "../common/Button";
@@ -50,7 +46,7 @@ export default function Products() {
               <MainTitle title={"Products"} />
             </div>
 
-            <div className={styles.text}>
+            <div>
               <p>
                 All Vanilla Cake Pops have a chocolate coating, which you can
                 fully customize!
