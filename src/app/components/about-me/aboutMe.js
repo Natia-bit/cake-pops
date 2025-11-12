@@ -4,9 +4,9 @@ import Image from "next/image";
 
 import styles from "./aboutMe.module.css";
 
-export default function AboutMe() {
+export default function AboutMe({ id }) {
   return (
-    <div className={styles.aboutMeContainer}>
+    <section id={id} className={styles.aboutMeContainer}>
       <TwoColumnSection
         sectionLeft={
           <div className={styles.context}>
@@ -36,6 +36,6 @@ export default function AboutMe() {
           </div>
         }
       ></TwoColumnSection>
-    </div>
+    </section>
   );
 }

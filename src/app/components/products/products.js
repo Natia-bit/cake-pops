@@ -17,9 +17,9 @@ const fancyPrice = [
   { name: "Large", qt: 50, standard: 900, deluxe: 1150 },
 ];
 
-export default function Products() {
+export default function Products({ id }) {
   return (
-    <div>
+    <section id={id}>
       <div className={styles.mobileTitle}>
         <MainTitle title={"Products"} />
       </div>
@@ -85,6 +85,6 @@ export default function Products() {
           </div>
         }
       ></TwoColumnSection>
-    </div>
+    </section>
   );
 }

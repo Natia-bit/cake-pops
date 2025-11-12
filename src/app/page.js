@@ -1,6 +1,6 @@
 import Image from "next/image";
 import styles from "./page.module.css";
-import AboutMe from "./components/about-me/AboutMe";
+import AboutMe from "./components/about-me/aboutMe";
 import Products from "./components/products/products";
 import Product from "./components/products/Product";
 
@@ -8,9 +8,9 @@ export default function Home() {
   return (
     <div className={styles.page}>
       <main className={styles.main}>
-        <AboutMe />
-        <Products />
-        <Product />
+        <AboutMe id="about-me" />
+        <Products id="products" />
+        <Product id="product" />
       </main>
     </div>
   );
