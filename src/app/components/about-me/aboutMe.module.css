@@ -1,0 +1,33 @@
+.aboutMeContainer {
+  margin-top: calc(var(--nav-height, 100px) + 30px);
+}
+
+.context {
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.imageWrapper {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.image {
+  width: 100%;
+  max-width: 3000px;
+  height: auto;
+  object-fit: cover;
+}
+
+@media (min-width: 1024px) {
+  .image {
+    max-width: 4000px;
+  }
+}

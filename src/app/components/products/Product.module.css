@@ -1,0 +1,48 @@
+.container {
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.priceWapper {
+  display: flex;
+  flex-direction: row;
+  gap: 80px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5em;
+  margin-bottom: 5em;
+
+  flex: 1;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 80px;
+}
+
+.contextWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.note {
+  color: grey;
+  padding-top: 2em;
+}
+
+.btnWrapper {
+  padding: 30px 30px;
+}
+
+@media (max-width: 768px) {
+  .priceWapper {
+    flex-direction: column;
+    gap: 50px;
+    margin-top: 0;
+    margin-bottom: 2rem;
+  }
+}

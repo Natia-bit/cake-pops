@@ -1,0 +1,39 @@
+.cardContainer {
+  background-color: var(--color-accent-light);
+  min-width: 400px;
+  max-width: 500px;
+  min-height: 520px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  border-radius: 25px;
+  /* box-shadow: 0px 0.5rem 1rem rgba(0, 0, 0, 0.2); */
+  box-shadow: 15px 10px 25px 0px rgba(0, 0, 0, 0.4);
+}
+
+.banner {
+  min-height: 200px;
+  position: relative;
+}
+
+.title {
+  min-height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--color-primary);
+}
+
+.dataTable {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .cardContainer {
+    font-size: 0.9rem;
+    min-width: 350px;
+    min-height: 400px;
+  }
+}

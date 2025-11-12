@@ -1,0 +1,37 @@
+.pricingTable {
+  color: var(--color-primary);
+  margin: 20px;
+  border: solid var(--color-light) 1px;
+  border-collapse: collapse;
+}
+
+.head tr th {
+  border: solid var(--color-light) 1px;
+}
+
+.head tr,
+.body td {
+  height: 2em;
+}
+
+.body td {
+  color: var(--color-primary);
+  border-bottom: solid var(--color-light) 1px;
+}
+
+.nameCell {
+  text-align: left;
+  padding-left: 20px;
+}
+
+.qtCell {
+  text-align: center;
+  min-width: 3em;
+}
+
+.standardCell,
+.deluxeCell {
+  text-align: right;
+  padding-right: 20px;
+  /* padding-left: 10px; */
+}

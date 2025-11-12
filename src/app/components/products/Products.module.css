@@ -1,0 +1,56 @@
+.priceWrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 100px;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 5em;
+  margin-bottom: 5em;
+}
+
+.contextWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.desktopTitle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mobileTitle {
+  display: none;
+  text-align: center;
+  margin-top: 5rem;
+  margin-bottom: -100px;
+}
+
+.note {
+  color: grey;
+  padding-top: 2em;
+}
+
+.btnWrapper {
+  padding: 30px 30px;
+}
+
+@media (max-width: 768px) {
+  .priceWrapper {
+    flex-direction: column;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0;
+  }
+
+  .desktopTitle {
+    display: none;
+  }
+
+  .mobileTitle {
+    display: block;
+  }
+}
