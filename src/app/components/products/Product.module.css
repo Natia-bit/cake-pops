@@ -29,6 +29,11 @@
   align-items: center;
 }
 
+.note {
+  color: grey;
+  padding-top: 2em;
+}
+
 .btnWrapper {
   padding: 30px 30px;
 }

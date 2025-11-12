@@ -43,10 +43,6 @@ export default function Product() {
       <div className={styles.contextWrapper}>
         <div className={styles.text}>
           <p>
-            <span>*</span> The Deluxe option includes packaging, featuring
-            individual cake pops that are wrapped and have a sticker.
-          </p>
-          <p>
             All Vanilla Cake Pops have a chocolate coating, which you can fully
             customize! Choose your coating color, add shimmer and sprinkles in
             the colors you want. With the Fancy option you can choose a
@@ -61,6 +57,11 @@ export default function Product() {
             I love custom projects! If you have a specific idea or a design in
             mind, reach out and let&apos;s collaborate to create something
             unique.
+          </p>
+
+          <p className={styles.note}>
+            <span>*</span> The Deluxe option includes packaging, featuring
+            individual cake pops that are wrapped and have a sticker.
           </p>
         </div>
 
