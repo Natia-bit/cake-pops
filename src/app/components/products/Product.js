@@ -18,9 +18,9 @@ const fancyPrice = [
   { name: "Large", qt: 50, standard: 900, deluxe: 1150 },
 ];
 
-export default function Product() {
+export default function Product({ id }) {
   return (
-    <div className={styles.container}>
+    <section id={id} className={styles.container}>
       <div className={styles.title}>
         <MainTitle title={"Products"} />
       </div>
@@ -69,6 +69,6 @@ export default function Product() {
           <Button title={"Download Price List"} />
         </div>
       </div>
-    </div>
+    </section>
   );
 }

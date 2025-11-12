@@ -20,11 +20,6 @@ const sections = [
     ),
   },
   {
-    id: "home",
-    label: "Home",
-    icon: <span className="material-symbols-outlined">home</span>,
-  },
-  {
     id: "about-me",
     label: "About me",
     icon: <span className="material-symbols-outlined">person</span>,
@@ -33,6 +28,11 @@ const sections = [
     id: "products",
     label: "Products",
     icon: <span className="material-symbols-outlined">shopping_bag</span>,
+  },
+  {
+    id: "product",
+    label: "Product 2",
+    icon: <span className="material-symbols-outlined">home</span>,
   },
   {
     id: "location",
