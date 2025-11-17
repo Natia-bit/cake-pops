@@ -1,3 +1,4 @@
+import MainTitle from "../common/MainTitle";
 import ImageGallery from "../ImageGallery";
 import styles from "./Gallery.module.css";
 import ImageFrame from "./ImageFrame";
@@ -18,8 +19,8 @@ export default function Gallery({ id }) {
   ];
 
   return (
-    <section id={id} className="container">
-      {/* <ImageGallery imageData={data} /> */}
+    <section id={id} className={styles.container}>
+      <MainTitle title={"Gallery"} />
       <ImageFrame data={data} />
     </section>
   );
