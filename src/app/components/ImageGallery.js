@@ -3,19 +3,12 @@
 import { useState } from "react";
 import styles from "./ImageGallery.module.css";
 
-const images = [
-  "/cake-pops/flower.jpeg",
-  "/cake-pops/blue-and-orange-flowers.png",
-  "/cake-pops/springtime-one.png",
-  "/cake-pops/polka-dot.png",
-];
-
-export default function ImageGallery() {
+export default function ImageGallery({ imageData }) {
   const [activeIndex, setActiveIndex] = useState(1);
 
   return (
     <div className={styles.galleryContainer}>
-      {images.map((src, index) => (
+      {imageData.map((src, index) => (
         <div
           key={index}
           className={`${styles.option} ${
