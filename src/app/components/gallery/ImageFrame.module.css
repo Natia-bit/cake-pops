@@ -1,0 +1,23 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 100px;
+  padding: 10px;
+}
+
+.imageItem {
+  width: 300px;
+  height: 400px;
+  overflow: hidden;
+  position: relative;
+  border: 1px solid #ccc;
+  border-radius: 19px;
+}
+
+@media (max-width: 768px) {
+  .container {
+    gap: 50px;
+  }
+}

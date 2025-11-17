@@ -35,9 +35,9 @@ const sections = [
     icon: <span className="material-symbols-outlined">home</span>,
   },
   {
-    id: "location",
-    label: "Location",
-    icon: <span className="material-symbols-outlined">location_on</span>,
+    id: "gallery",
+    label: "Gallery",
+    icon: <span class="material-symbols-outlined">art_track</span>,
   },
   {
     id: "contact",

@@ -1,11 +1,12 @@
 .galleryContainer {
   display: flex;
   flex-direction: row;
-  align-items: stretch;
+  /* align-items: stretch; */
+
   justify-content: center;
   overflow: hidden;
   width: 100%;
-  max-width: 900px;
+  max-width: 400px;
   height: 400px;
   gap: 15px;
   flex: 1 1 50%;
