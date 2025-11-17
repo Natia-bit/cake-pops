@@ -7,12 +7,12 @@ export default function Gallery({ id }) {
     "/cake-pops/flowers.jpg",
     "/cake-pops/springtime-one.png",
     "/cake-pops/green-dino.jpg",
+    "/cake-pops/blue-and-orange-flowers.png",
     "/cake-pops/unicorn.jpg",
     "/cake-pops/unicorns-packed.jpg",
     "/cake-pops/unicorn3.jpg",
     "/cake-pops/spiderman-pops.jpg",
     "/cake-pops/flower.jpeg",
-    "/cake-pops/blue-and-orange-flowers.png",
     "/cake-pops/baby-gender.jpg",
     "/cake-pops/polka dot.png",
   ];
