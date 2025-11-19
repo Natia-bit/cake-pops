@@ -37,12 +37,12 @@ const sections = [
   {
     id: "gallery",
     label: "Gallery",
-    icon: <span class="material-symbols-outlined">art_track</span>,
+    icon: <span className="material-symbols-outlined">art_track</span>,
   },
   {
     id: "location",
     label: "Location",
-    icon: <span class="material-symbols-outlined">globe_location_pin</span>,
+    icon: <span className="material-symbols-outlined">globe_location_pin</span>,
   },
 
   {
