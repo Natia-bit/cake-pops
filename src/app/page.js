@@ -4,6 +4,7 @@ import AboutMe from "./components/about-me/aboutMe";
 import Products from "./components/products/products";
 import Product from "./components/products/Product";
 import Gallery from "./components/gallery/Gallery";
+import Location from "./components/location/Location";
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
         <Products id="products" />
         <Product id="product" />
         <Gallery id="gallery" />
+        <Location id="location" />
       </main>
     </div>
   );
