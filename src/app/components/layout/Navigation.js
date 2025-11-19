@@ -40,6 +40,12 @@ const sections = [
     icon: <span class="material-symbols-outlined">art_track</span>,
   },
   {
+    id: "location",
+    label: "Location",
+    icon: <span class="material-symbols-outlined">globe_location_pin</span>,
+  },
+
+  {
     id: "contact",
     label: "Contact",
     icon: <span className="material-symbols-outlined">call</span>,
