@@ -102,10 +102,12 @@ export default function Navigation() {
           <li
             key={id}
             className={` ${styles.navButton} ${
-              styles.activeSection === id ? styles.active : styles.inactive
+              activeSection === id ? styles.active : ""
             } ${id === "" ? styles.logoNavButton : ""}`}
           >
-            <Link href={`/#${id}`}>{label}</Link>
+            <Link href={`/#${id}`} onClick={() => setActiveSection(id)}>
+              {label}
+            </Link>
           </li>
         ))}
       </ul>
@@ -119,7 +121,10 @@ export default function Navigation() {
               className={`${styles.dropdownItem} ${
                 activeSection === id ? styles.active : ""
               }`}
-              onClick={() => setMenuOpen(false)}
+              onClick={() => {
+                setActiveSection(id);
+                setMenuOpen(false);
+              }}
             >
               {icon}
               <span>{label}</span>

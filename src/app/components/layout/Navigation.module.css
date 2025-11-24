@@ -26,8 +26,19 @@
   color: var(--color-primary);
 }
 
+.navButton a {
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
 .navButton:hover {
-  font-size: 1.3em;
+  color: var(--color-accent-light);
+}
+
+.active a {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  font-weight: 600;
   color: var(--color-accent-light);
 }
 
@@ -102,5 +113,10 @@
   .dropdownItem.active {
     color: var(--color-accent-light);
     font-weight: bold;
+  }
+
+  .active a {
+    text-decoration: none;
+    font-weight: 600;
   }
 }
