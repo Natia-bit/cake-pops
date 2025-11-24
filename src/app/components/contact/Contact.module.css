@@ -1,0 +1,17 @@
+.container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.socialMediaContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.socialMediaWrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+}
