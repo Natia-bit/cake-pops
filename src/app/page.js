@@ -5,6 +5,7 @@ import Products from "./components/products/products";
 import Product from "./components/products/Product";
 import Gallery from "./components/gallery/Gallery";
 import Location from "./components/location/Location";
+import Contact from "./components/contact/Contact";
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
         <Product id="product" />
         <Gallery id="gallery" />
         <Location id="location" />
+        <Contact id="contact" />
       </main>
     </div>
   );
