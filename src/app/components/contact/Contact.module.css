@@ -1,0 +1,33 @@
+.container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.socialMediaContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.socialMediaWrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+  .container {
+    margin-bottom: 50px;
+  }
+
+  .imageWrapper {
+    width: 100%;
+  }
+
+  .image {
+    width: 100% !important;
+    height: auto !important;
+    display: block;
+  }
+}
